@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+
+}
+
+header {
+
+    /* colocando cor de fundo no header*/
+    background-color: #5f27cd;
+    /*adicionando margem superior e inferior de 16px o mantendo 0 as paterais*/
+    padding: 16px 0;
+    /*cor do texto*/
+    color: #fff;
+    /*para colocar o botão ao lado do texto*/
+    display: flex;
+    /* colocando uma linha abaixo do background */
+    border-bottom: #341f97;
+    /* Ajustando tudo ao centro do header */
+    justify-content: center;
+    /* deixar o titulo tudo em Maiusculo */
+    text-transform: uppercase;
+    /* deixar o texto em Italico */
+    font-style: italic;
+
+}
+
+header button {
+    /* adicionando uma margin a esquerda do botão para nao ficar colado */
+    margin-left: 16px;
+}
+
+form {
+    /* adicionando cor ao fundo do form */
+    background: #c8d6e5;
+    /* definindo padding superior e inferiro */
+    padding-block: 24px;
+    /* alinhando o texto ao centro */
+    text-align: center;
+}
+
+form h2 {
+    /* adicionar margin abaixo do titulo */
+    margin-bottom: 16px;
+}
+
+input, button {
+    /* adicionar espaçamento entre os elementos */
+    padding: 8px;
+}
+
+button {
+    /* adicionar cor ao botão */
+    background: #009432;
+    /* remover efeito de borda */
+    border: none;
+    /* adicionar efeito ao cursor */
+    cursor: pointer;
+    /* adicionar um destaque na fonte do button */
+    font-weight: bold;
+    /* colocar o texto do botão em maiusculo */
+    text-transform: uppercase;
+    /* adicionar cor ao texto do button */
+    color: #fff;
+}
+
+
+#btn-cancelar {
+    /* adicionar cor ao botão cancelar */
+    background-color: red;
+}
+
+ul {
+    /* colocar um item ao lado do outro */
+    display: flex;
+    /* usar o Wrap para quando chegar no tamanho da tela, seja criado uma nova linha */
+    flex-wrap: wrap;
+}
+
+ul li {
+    /* definindo um tamanho de lagura para as imagens */
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    /* devemos usar o overflow-y para cortar ou esconder a imagem que ultrapassa a altura necessaria e usar o overflow-x quando for largura*/
+    overflow-y: hidden;
+}
+
+ul li img {
+    /* definindo o tamanho da imagem */
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* adicionar o texto na parte inferior */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.overlay-imagem-link a {
+    color: #fff;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
